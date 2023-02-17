@@ -1,35 +1,44 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "NeutralFace";
-  src: url("../fonts/NeutralFace.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "NeutralFace-Bold";
-  src: url("../fonts/NeutralFace-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HelveticaNeueCyr-Light";
-  src: url("../fonts/HelveticaNeueCyr-Light.eot");
-  src: local("../fonts/HelveticaNeueCyr-Light"), url("../fonts/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "HelveticaNeueCyr-Roman";
-  src: url("../fonts/HelveticaNeueCyr-Roman.eot");
-  src: local("../fonts/HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-family: "f800";
+  src: url("../fonts/Manrope-ExtraBold.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "HelveticaNeueCyr-Bold";
-  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
-  src: local("../fonts/HelveticaNeueCyr-Bold"), url("../fonts/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
-  font-weight: bold;
+  font-family: "f700";
+  src: url("../fonts/Manrope-Bold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "f600";
+  src: url("../fonts/Manrope-SemiBold.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "f500";
+  src: url("../fonts/Manrope-Medium.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "f400";
+  src: url("../fonts/Manrope-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "f300";
+  src: url("../fonts/Manrope-Light.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "f200";
+  src: url("../fonts/Manrope-ExtraLight.ttf") format("opentype");
+  font-weight: normal;
   font-style: normal;
 }
 .oh {
