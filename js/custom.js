@@ -9,19 +9,7 @@ $(document).ready(function () {
         $('#hamburger').toggleClass('open');
         $('li.vis').removeClass('vis');
     });
-    
-    $('.nav > li > a').on('click', function (e) {
-        e.preventDefault();
-        $(this).parent('li').toggleClass('vis');
-    });
-    $('.nav > li > ul > li> a').on('click', function (e) {
-        e.preventDefault();
-        $(this).parent('li').toggleClass('vis');
-    });
-    $('.nav__back').on('click', function (e) {
-        e.preventDefault();
-        $(this).parent('ul').parent('li').removeClass('vis');
-    });
+
     /*end top menu toggle*/
 
     /*scroll to top*/
@@ -45,7 +33,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         dots: false,
         adaptiveHeight: true,
-        autoplay: true,
+        //autoplay: true,
         autoplaySpeed: 10000,
         responsive: [
             {
