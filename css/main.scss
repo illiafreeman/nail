@@ -761,7 +761,10 @@ body {
     left: 4px;
 }
 // end hamburger
-
+*:focus {
+    outline: 0;
+    outline: none;
+}
 
 
 

@@ -7,7 +7,6 @@ $(document).ready(function () {
         $('.nav').toggleClass('vis');
         $('body').toggleClass('oh');
         $('#hamburger').toggleClass('open');
-        $('li.vis').removeClass('vis');
     });
 
     /*end top menu toggle*/
