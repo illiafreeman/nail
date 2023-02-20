@@ -51,11 +51,8 @@ $(document).ready(function () {
         autoplaySpeed: 7000,
         responsive: [
             {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 3,
-                    adaptiveHeight: true
-                }
+                breakpoint: 1024,
+                settings: "unslick",
             }
         ]
     });
