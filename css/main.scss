@@ -49,16 +49,85 @@
 body {
     font-family: 'f400';
     color: $text-color;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
 }
 .container{
     width: 1252px;
     margin: 0 auto;
 }
-.header {
-    background: $text-color;
-    height: 42px;
+.search {
+    width: 300px;
+    position: relative;
+    padding-right: 50px;
+    border-bottom: 1px solid #C4C4C4;
+    &__field {
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        
+        font-size: 14px;
+        line-height: 19px;
+        font-family: 'f300';
+        width: 100%;
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background: url(../img/search.png) no-repeat center center;
+        top: 10px;
+        right: 10px;
+        //z-index: -1;
+    }
 }
+.header-logo {
+    width: 380px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 150px;
+    background: url(../img/logo.svg) no-repeat center top;
+    &__desc {
+        font-family: 'f300';
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+.header-navgroup {
+    width: 33.333%;
+}
+.header-nav {
+    &__link {
+      &_basket {}
+      &_login {}
+    }
+}
+.header {
+    &-head{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto 1fr;
+    }
+    padding: 26px 0;
+    &__btn {}
+}
+.nav {
+    width: 100%;
+    &__link {
+      &_drop {}
+    }
+    &__drop {}
+    &__drop-item {}
+    &__drop-link {}
+    &__note {}
+}
+
 
 @import '_query';
