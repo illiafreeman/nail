@@ -116,12 +116,30 @@ body {
         }
         &_basket {
             background: url(../img/basket.png) no-repeat center center;
+            position: relative;
+
         }
         &_login {
             background: url(../img/login.png) no-repeat center center;
             margin-left: 10px;
         }
+        &-label {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 16px;
+            height: 16px;
+            font-size: 11px;
+            line-height: 11px;
+            color: #fff;
+            background: #DE3838;
+            bottom: 5px;
+            right: 2px;
+            border-radius: 50%;
+        }
     }
+    
 }
 .header {
     &-head{
@@ -146,7 +164,6 @@ body {
         font-family: 'f500';
         transition: $transition;
         &_drop {
-            
             padding-right: 20px;
             background: url(../img/down-arrow.png) no-repeat right center / 16px ;
             top: 5px;
@@ -159,7 +176,7 @@ body {
                     top: 100%;
                 }
                 span{
-                        opacity: 0.5;
+                    //opacity: 0.5;
                 }
             }
         }
@@ -212,6 +229,89 @@ body {
         font-family: 'f300';
     }
 }
+.article {
+    padding-bottom: 102px;
+    margin-bottom: 92px;
+    border-bottom: 1px solid #111111;
+}
+.intro {
+    .slick-prev, .slick-next{
+        padding: 0;
+        border: 0;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/arr_white.png) no-repeat center center;
+        transition: $transition;
+        z-index: 100;
+    }
+    .slick-prev{
+        left: 40px;
+        &:hover{
+            left: 35px;
+        }
+    }
+    .slick-next{
+        right: 40px;
+        transform: rotate(180deg);
+        &:hover{
+            right: 35px;
+        }
+    }
+    &__pic {}
+}
+.slider {
+    &_intro {}
+}
+.slick-prev::before, .slick-prev::after, .slick-next::before, .slick-next::after {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import '_query';
