@@ -728,4 +728,30 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid #111111;
   margin-bottom: 12px;
+}
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+}
+.popular__item {
+  width: 120px;
+}
+.popular__link {
+  display: block;
+  text-align: center;
+}
+.popular__link img {
+  border: 1px solid #111111;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.popular__link:hover img {
+  transform: scale(1.05);
+}
+.popular__link-desc {
+  font-size: 16px;
+  line-height: 22px;
 }/*# sourceMappingURL=main.css.map */
