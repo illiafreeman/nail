@@ -93,7 +93,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     height: 150px;
-    background: url(../img/logo.svg) no-repeat center top;
+    background: url(../img/logo.svg) no-repeat center top / contain;
     &__desc {
         font-family: 'f300';
         font-size: 16px;
@@ -593,6 +593,7 @@ body {
     &__wrap {
         display: flex;
         gap: 40px;
+        align-items: flex-start;
     }
     &__desc {
         h4{
@@ -704,7 +705,14 @@ body {
         }
     }
 }
-
+.header__btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(20px);
+}
 
 
 

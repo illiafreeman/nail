@@ -1,6 +1,54 @@
 @media only screen and (max-width: 1280px) {
     .container {
-        width: 1252px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .header {
+        padding: 26px 20px;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .header-logo{
+        width: 46px;
+        height: 46px;
+    }
+    .header-logo__desc{
+        display: none;
+    }
+    .header.container{
+        padding: 8px 20px;
+    }
+    .header-head{
+        padding-bottom: 42px;
+        margin-bottom: 54px;
+        position: relative;
+        display: flex;  
+        justify-content: space-between;
+    }
+    .search{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .header__btn{
+        display: block;
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

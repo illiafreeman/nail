@@ -474,7 +474,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   height: 150px;
-  background: url(../img/logo.svg) no-repeat center top;
+  background: url(../img/logo.svg) no-repeat center top/contain;
 }
 .header-logo__desc {
   font-family: "f300";
@@ -950,6 +950,7 @@ body {
 .aboutus__wrap {
   display: flex;
   gap: 40px;
+  align-items: flex-start;
 }
 .aboutus__desc h4 {
   font-family: "f500";
@@ -1052,8 +1053,50 @@ body {
   text-decoration: none;
 }
 
+.header__btn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(20px);
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
-    width: 1252px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header {
+    padding: 26px 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .header-logo {
+    width: 46px;
+    height: 46px;
+  }
+  .header-logo__desc {
+    display: none;
+  }
+  .header.container {
+    padding: 8px 20px;
+  }
+  .header-head {
+    padding-bottom: 42px;
+    margin-bottom: 54px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .search {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .header__btn {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
