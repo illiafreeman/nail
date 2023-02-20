@@ -608,6 +608,69 @@ body {
     }
     &__pic {}
 }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    &__promo {}
+    &__logo {
+        display: block;
+        width: 86px;
+        height: 86px;
+        background: url(../img/logo.svg) no-repeat center top / contain;
+        margin-bottom: 24px;
+    }
+    &__mail {
+        font-size: 14px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        margin-bottom: 46px;
+        display: inline-block;
+        &:hover{
+            text-decoration-line: none;
+        }
+    }
+    &__socwrap {
+        display: flex;
+        gap: 16px;
+    }
+    &__soc {
+        display: block;
+        width: 38px;
+        height: 38px;
+        transition: $transition;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__soc-fb {
+        background: url(../img/fb.png) no-repeat center top / contain;
+    }
+    &__soc-in {
+        background: url(../img/in.png) no-repeat center top / contain;
+    }
+    &__product {}
+    &__product-title {
+        font-family: "f500";
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    &__product-list {
+        display: flex;
+        gap: 30px;
+    }
+    &__product-col{
+
+    }
+    &__product-item {
+    }
+    &__product-link {}
+    &__link-list {}
+    &__link-item {}
+    &__link-link {}
+    &__copy {}
+}
+
 
 
 

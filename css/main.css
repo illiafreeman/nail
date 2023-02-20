@@ -960,4 +960,54 @@ body {
 }
 .aboutus__desc p:last-child {
   margin-bottom: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  display: block;
+  width: 86px;
+  height: 86px;
+  background: url(../img/logo.svg) no-repeat center top/contain;
+  margin-bottom: 24px;
+}
+.footer__mail {
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  margin-bottom: 46px;
+  display: inline-block;
+}
+.footer__mail:hover {
+  text-decoration-line: none;
+}
+.footer__socwrap {
+  display: flex;
+  gap: 16px;
+}
+.footer__soc {
+  display: block;
+  width: 38px;
+  height: 38px;
+  transition: all 0.2s ease-in-out;
+}
+.footer__soc:hover {
+  transform: scale(1.1);
+}
+.footer__soc-fb {
+  background: url(../img/fb.png) no-repeat center top/contain;
+}
+.footer__soc-in {
+  background: url(../img/in.png) no-repeat center top/contain;
+}
+.footer__product-title {
+  font-family: "f500";
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.footer__product-list {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=main.css.map */
