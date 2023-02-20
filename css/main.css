@@ -529,25 +529,29 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .nav__link_drop {
-  position: relative;
-  cursor: pointer;
   padding-right: 20px;
-}
-.nav__link_drop:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: url(../img/down-arrow.png) no-repeat center center/contain;
+  background: url(../img/down-arrow.png) no-repeat right center/16px;
   top: 5px;
   right: 0px;
+}
+.nav__link_drop:hover {
+  opacity: 1 !important;
+}
+.nav__link_drop:hover .nav__drop {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+.nav__link_drop:hover span {
+  opacity: 0.5;
 }
 .nav__link span {
   font-size: 18px;
   line-height: 25px;
   text-transform: uppercase;
   font-family: "f500";
+  transition: all 0.2s ease-in-out;
+  cursor: default;
 }
 .nav__link:hover {
   opacity: 0.5;
@@ -556,6 +560,30 @@ body {
   opacity: 0;
   visibility: hidden;
   position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+  top: 50px;
+  padding: 36px;
+}
+.nav__drop-item {
+  -moz-column-count: 3;
+       column-count: 3;
+}
+.nav__drop-link {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: none;
+  font-family: "f400";
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.nav__drop-link:hover {
+  opacity: 0.5;
 }
 .nav__note {
   position: absolute;

@@ -146,18 +146,21 @@ body {
         font-family: 'f500';
         transition: $transition;
         &_drop {
-            position: relative;
-            cursor: pointer;
+            
             padding-right: 20px;
-            &:after{
-                content: '';
-                display: block;
-                position: absolute;
-                width: 16px;
-                height: 16px;
-                background: url(../img/down-arrow.png) no-repeat center center / contain;
-                top: 5px;
-                right: 0px;
+            background: url(../img/down-arrow.png) no-repeat right center / 16px ;
+            top: 5px;
+            right: 0px;
+            &:hover{
+                opacity: 1 !important;
+                .nav__drop{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 100%;
+                }
+                span{
+                        opacity: 0.5;
+                }
             }
         }
         span{
@@ -165,6 +168,8 @@ body {
             line-height: 25px;
             text-transform: uppercase;
             font-family: 'f500';
+            transition: $transition;
+            cursor: default;
         }
         &:hover{
             opacity: 0.5;
@@ -174,10 +179,29 @@ body {
         opacity: 0;
         visibility: hidden;
         position: absolute;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+        left: 0;
+        right: 0;
+        z-index: 100;
+        transition: $transition;
+        top: 50px;
+        padding: 36px;
     }
-    &__drop-item {}
+    &__drop-item {
+        column-count: 3;
+    }
     &__drop-link {
-        
+        display: block;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: none;
+        font-family: 'f400';
+        margin-bottom: 20px;
+        transition: $transition;
+        &:hover{
+            opacity: 0.5;
+        }
     }
     &__note {
         position: absolute;
