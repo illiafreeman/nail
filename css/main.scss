@@ -264,7 +264,7 @@ body {
     }
     .slick-next{
         right: 40px;
-        transform: rotate(180deg);
+        transform: rotate(180deg) translate(0, 50%);
         &:hover{
             right: 35px;
         }
@@ -434,6 +434,7 @@ body {
     }
 }
 .best {
+    padding-bottom: 70px;
     &__slider {
         padding: 0 40px;
         .slick-prev, .slick-next{
@@ -456,7 +457,7 @@ body {
         }
         .slick-next{
             right: 0;
-            transform: rotate(180deg);
+            transform: rotate(180deg) translate(0, 50%);
             &:hover{
                 right: -5px;
             }
@@ -482,11 +483,6 @@ body {
         display: flex;
         align-items: stretch;
         padding-bottom: 20px;
-    }
-    .slick-list{
-        overflow: visible;
-        overflow-x: hidden;
-        //overflow-y: visible;
     }
     &__link {
         border: 1px solid #D2D2D2;
@@ -543,6 +539,51 @@ body {
             background: transparent;
         }
     }
+}
+.brand {
+    &__slider {
+        padding: 0 40px;
+        .slick-prev, .slick-next{
+            padding: 0;
+            border: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../img/arr_black.png) no-repeat center center;
+            transition: $transition;
+            z-index: 100;
+        }
+        .slick-prev{
+            left: 0;
+            &:hover{
+                left: -5px;
+            }
+        }
+        .slick-next{
+            right: 0;
+            transform: rotate(180deg) translate(0, 50%);
+            &:hover{
+                right: -5px;
+            }
+        }
+        .slick-track{
+            display: flex;
+            align-items: stretch;
+        }
+    }
+    &__slider-item {
+        margin: 0 13px;
+        flex-direction: column;
+        display: flex !important;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        transition: $transition;
+    }
+    &__slider-link {}
+    &__slider-logo {}
 }
 
 

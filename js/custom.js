@@ -34,6 +34,21 @@ $(document).ready(function () {
             }
         ]
     });
+    $('#slick_3').slick({
+        slidesToShow: 4,
+        dots: false,
+        //autoplay: true,
+        autoplaySpeed: 7000,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                }
+            }
+        ]
+    });
     $('#slick_2').slick({
         slidesToShow: 4,
         dots: false,

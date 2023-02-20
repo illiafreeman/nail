@@ -644,7 +644,7 @@ body {
 }
 .intro .slick-next {
   right: 40px;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(0, 50%);
 }
 .intro .slick-next:hover {
   right: 35px;
@@ -797,6 +797,9 @@ body {
   border-left: 4px solid #111;
 }
 
+.best {
+  padding-bottom: 70px;
+}
 .best__slider {
   padding: 0 40px;
 }
@@ -820,7 +823,7 @@ body {
 }
 .best__slider .slick-next {
   right: 0;
-  transform: rotate(180deg);
+  transform: rotate(180deg) translate(0, 50%);
 }
 .best__slider .slick-next:hover {
   right: -5px;
@@ -845,10 +848,6 @@ body {
   display: flex;
   align-items: stretch;
   padding-bottom: 20px;
-}
-.best .slick-list {
-  overflow: visible;
-  overflow-x: hidden;
 }
 .best__link {
   border: 1px solid #D2D2D2;
@@ -901,4 +900,46 @@ body {
 .best__item-add:hover {
   color: #111;
   background: transparent;
+}
+
+.brand__slider {
+  padding: 0 40px;
+}
+.brand__slider .slick-prev, .brand__slider .slick-next {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/arr_black.png) no-repeat center center;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+.brand__slider .slick-prev {
+  left: 0;
+}
+.brand__slider .slick-prev:hover {
+  left: -5px;
+}
+.brand__slider .slick-next {
+  right: 0;
+  transform: rotate(180deg) translate(0, 50%);
+}
+.brand__slider .slick-next:hover {
+  right: -5px;
+}
+.brand__slider .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+.brand__slider-item {
+  margin: 0 13px;
+  flex-direction: column;
+  display: flex !important;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
