@@ -3,10 +3,13 @@ $(document).ready(function () {
     /*top menu toggle*/
 
     $('.header__btn').click(function () {
-        $(this).toggleClass('close');
         $('.nav').toggleClass('vis');
         $('body').toggleClass('oh');
         $('#hamburger').toggleClass('open');
+        $('.nav__link_drop').removeClass('vis');
+    });
+    $('.nav__link_drop').click(function() {
+        $(this).addClass('vis');
     });
 
     /*end top menu toggle*/
@@ -62,6 +65,7 @@ $(document).ready(function () {
         $('#'+activeTab).addClass('vis');
         return false;
     });
+    
 
 });
 
