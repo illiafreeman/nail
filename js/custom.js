@@ -12,23 +12,7 @@ $(document).ready(function () {
 
     /*end top menu toggle*/
 
-    /*scroll to top*/
-    var scrollTop = $(".scroll-top");
-    $(window).scroll(function () {
-        var topPos = $(this).scrollTop();
-        if (topPos > 700) {
-            $(scrollTop).addClass('vis');
-        } else {
-            $(scrollTop).removeClass('vis');
-        }
-    });
-    $(scrollTop).click(function () {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
-    /*end scroll to top*/
+
     $('#slick_1').slick({
         slidesToShow: 1,
         dots: false,
@@ -50,39 +34,14 @@ $(document).ready(function () {
             }
         ]
     });
-    $('.intro__nav_next').click(function() {
-        $('#slick_1').slick('slickNext');
+    $('.adv__desc-item').hover(function() {
+        $('.adv__pic-item').removeClass('vis');
+        var activeTab = $(this).attr('data-id');
+        console.log(activeTab);
+        $('#'+activeTab).addClass('vis');
+        return false;
     });
-    $('.intro__nav_prev').click(function() {
-        $('#slick_1').slick('slickPrev');
-    });
 
-
-
-    $('#slick_2').slick({     
-        slidesToShow: 3,
-        dots: false,
-        arrows: false,
-        centerMode: false,
-        variableWidth: false,
-        infinite: false,
-        focusOnSelect: false,
-        adaptiveHeight: true,
-
-        responsive: [
-            {
-            breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true,
-                    arrows: false,
-                    centerMode: true,
-                    infinite: true,
-                    focusOnSelect: true,
-                }
-            }                  
-        ]
-    });
 });
 
 
