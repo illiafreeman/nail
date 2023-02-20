@@ -942,4 +942,22 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.2s ease-in-out;
+}
+.aboutus__wrap {
+  display: flex;
+  gap: 40px;
+}
+.aboutus__desc h4 {
+  font-family: "f500";
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 26px;
+}
+.aboutus__desc p {
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 26px;
+}
+.aboutus__desc p:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */

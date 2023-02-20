@@ -585,6 +585,29 @@ body {
     &__slider-link {}
     &__slider-logo {}
 }
+.aboutus {
+    &__wrap {
+        display: flex;
+        gap: 40px;
+    }
+    &__desc {
+        h4{
+            font-family: "f500";
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 26px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 27px;
+            margin-bottom: 26px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__pic {}
+}
 
 
 
