@@ -795,4 +795,110 @@ body {
   line-height: 30px;
   font-family: "f400";
   border-left: 4px solid #111;
+}
+
+.best__slider {
+  padding: 0 40px;
+}
+.best__slider .slick-prev, .best__slider .slick-next {
+  padding: 0;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/arr_black.png) no-repeat center center;
+  transition: all 0.2s ease-in-out;
+  z-index: 100;
+}
+.best__slider .slick-prev {
+  left: 0;
+}
+.best__slider .slick-prev:hover {
+  left: -5px;
+}
+.best__slider .slick-next {
+  right: 0;
+  transform: rotate(180deg);
+}
+.best__slider .slick-next:hover {
+  right: -5px;
+}
+.best__item {
+  margin: 0 13px;
+  flex-direction: column;
+  display: flex !important;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 10px;
+}
+.best__item:hover {
+  box-shadow: 0px 8px 10px 2px rgba(0, 0, 0, 0.12);
+}
+.best__item:hover .best__link {
+  border: 1px solid transparent;
+}
+.best .slick-track {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 20px;
+}
+.best .slick-list {
+  overflow: visible;
+  overflow-x: hidden;
+}
+.best__link {
+  border: 1px solid #D2D2D2;
+  display: flex;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
+  align-self: stretch;
+}
+.best__item-name {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+.best__item-price {
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #DE3838;
+  font-family: "f600";
+}
+.best__item-add {
+  font-size: 16px;
+  line-height: 22px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-family: "f500";
+  text-transform: uppercase;
+  background: #111;
+  border: 1px solid #111;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 0 26px;
+}
+.best__item-add:hover {
+  color: #111;
+  background: transparent;
 }/*# sourceMappingURL=main.css.map */

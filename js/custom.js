@@ -34,6 +34,21 @@ $(document).ready(function () {
             }
         ]
     });
+    $('#slick_2').slick({
+        slidesToShow: 4,
+        dots: false,
+        //autoplay: true,
+        autoplaySpeed: 7000,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 1,
+                    adaptiveHeight: true
+                }
+            }
+        ]
+    });
     $('.adv__desc-item').hover(function() {
         $('.adv__pic-item').removeClass('vis');
         var activeTab = $(this).attr('data-id');
