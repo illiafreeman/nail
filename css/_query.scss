@@ -127,9 +127,54 @@
         display: block;
         text-align: center;
     }
-    .article.popular{
-        
+    .adv__wrap{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
     }
+    .adv__pic {
+        flex: 0 0 320px;
+        width: 320px;
+        background-size: 172px 172px;
+        order: 2;
+    }
+    .adv__pic-item.vis {
+        width: 195px;
+    }
+    .adv__desc-item{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 0 10px 14px;
+        &:hover {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+    .adv__desc{
+        gap: 0px;  
+        order: 1; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
