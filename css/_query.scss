@@ -213,16 +213,52 @@
         line-height: 22px;
         margin-bottom: 20px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
+    .footer{
+        flex-direction: column;
+        padding-bottom: 42px;
+    }
+    .footer__promo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__mail{
+        margin-bottom: 20px;
+    }
+    .footer__logo{
+        margin-bottom: 42px;
+    }
+    .footer__product{
+        margin-bottom: 32px;
+    }
+    .footer__product-title {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .footer__product-link {
+        font-size: 12px;
+        line-height: 16px;
+        display: block;
+    }
+    .footer__product-item {
+        margin-bottom: 8px;
+    }
+    .footer__link-list{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer__link-item{
+        margin-bottom: 0;
+    }
+    .footer__link-link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .footer__copy{
+        padding: 22px 20px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .footer__product-list {
+        gap: 16px;
+    }
 }
