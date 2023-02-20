@@ -45,9 +45,45 @@
     .nav{
         display: none;
     }
-
-
-
+    .article {
+        padding-bottom: 54px;
+        margin-bottom: 42px;
+    }
+    .article__title {
+        font-size: 24px;
+        line-height: 33px;
+        width: auto;
+        margin-bottom: 32px;
+    }
+    .modalita__pay {
+        position: static;
+    }
+    .modalita{
+        display: flex;
+        flex-direction: column;
+        .modalita__pay{
+            order: 3;
+            div {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: "f300";
+            }
+        }
+        .modalita__items{
+            order: 2;
+            margin-bottom: 32px;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .modalita__item {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .modalita__paysub {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
 
 
 
