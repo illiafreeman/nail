@@ -93,7 +93,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     height: 150px;
-    background: url(../img/logo.svg) no-repeat center top / contain;
+    background: url(../img/logo.svg) no-repeat center top;
     &__desc {
         font-family: 'f300';
         font-size: 16px;
@@ -708,7 +708,7 @@ body {
 .header__btn {
     width: 60px;
     height: 60px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     transform: translateX(16px);
