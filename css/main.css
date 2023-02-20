@@ -1017,6 +1017,7 @@ body {
 .footer__product-list {
   display: flex;
   gap: 60px;
+  justify-content: space-between;
 }
 .footer__product-item {
   margin-bottom: 10px;

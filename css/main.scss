@@ -665,6 +665,7 @@ body {
     &__product-list {
         display: flex;
         gap: 60px;
+        justify-content: space-between;
     }
     &__product-col{
 
