@@ -1272,4 +1272,41 @@ body {
     gap: 0px;
     order: 1;
   }
+  .best__slider {
+    padding: 0;
+    display: flex;
+    margin: 0 -20px;
+    padding: 0 20px;
+    overflow-x: auto;
+  }
+  .best__item {
+    width: 140px;
+    min-width: 140px;
+  }
+  .best__item:first-child {
+    margin-left: 0;
+  }
+  .best__item-pic {
+    max-height: 120px;
+  }
+  .best__link {
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  .best__item-name {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 6px;
+  }
+  .best__item-price {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 12px;
+  }
+  .best__item-add {
+    font-size: 12px;
+    line-height: 16px;
+    height: 42px;
+    padding: 0 5px;
+  }
 }/*# sourceMappingURL=main.css.map */
