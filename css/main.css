@@ -964,6 +964,8 @@ body {
 .footer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #C4C4C4;
 }
 .footer__logo {
   display: block;
@@ -975,12 +977,12 @@ body {
 .footer__mail {
   font-size: 14px;
   line-height: 19px;
-  text-decoration-line: underline;
+  text-decoration: underline;
   margin-bottom: 46px;
   display: inline-block;
 }
 .footer__mail:hover {
-  text-decoration-line: none;
+  text-decoration: none;
 }
 .footer__socwrap {
   display: flex;
@@ -1009,5 +1011,39 @@ body {
 }
 .footer__product-list {
   display: flex;
-  gap: 30px;
+  gap: 60px;
+}
+.footer__product-item {
+  margin-bottom: 10px;
+}
+.footer__product-link {
+  font-size: 14px;
+  line-height: 19px;
+  transition: all 0.2s ease-in-out;
+}
+.footer__product-link:hover {
+  opacity: 0.5;
+}
+.footer__link-item {
+  margin-bottom: 10px;
+}
+.footer__link-link {
+  font-family: "f500";
+  font-size: 16px;
+  line-height: 22px;
+  transition: all 0.2s ease-in-out;
+}
+.footer__link-link:hover {
+  opacity: 0.5;
+}
+.footer__copy {
+  padding: 46px 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer__copy a {
+  text-decoration: underline;
+}
+.footer__copy a:hover {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

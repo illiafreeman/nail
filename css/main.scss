@@ -611,6 +611,8 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #C4C4C4;
     &__promo {}
     &__logo {
         display: block;
@@ -622,11 +624,11 @@ body {
     &__mail {
         font-size: 14px;
         line-height: 19px;
-        text-decoration-line: underline;
+        text-decoration: underline;
         margin-bottom: 46px;
         display: inline-block;
         &:hover{
-            text-decoration-line: none;
+            text-decoration: none;
         }
     }
     &__socwrap {
@@ -657,18 +659,46 @@ body {
     }
     &__product-list {
         display: flex;
-        gap: 30px;
+        gap: 60px;
     }
     &__product-col{
 
     }
     &__product-item {
+        margin-bottom: 10px;
     }
-    &__product-link {}
+    &__product-link {
+        font-size: 14px;
+        line-height: 19px;
+        transition: $transition;
+        &:hover{
+            opacity: .5;
+        }
+    }
     &__link-list {}
-    &__link-item {}
-    &__link-link {}
-    &__copy {}
+    &__link-item {
+        margin-bottom: 10px;
+    }
+    &__link-link {
+        font-family: "f500";
+        font-size: 16px;
+        line-height: 22px;
+        transition: $transition;
+        &:hover{
+            opacity: .5;
+        }
+    }
+    &__copy {
+        padding: 46px 0;
+        font-size: 14px;
+        line-height: 19px;
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 
