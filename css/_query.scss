@@ -115,6 +115,8 @@
     .popular__list{
         overflow-x: auto;
         gap: 22px;
+        margin: 0 -20px;
+        padding: 0 20px;
     }
     .popular__item {
         min-width: 82px;
@@ -125,7 +127,9 @@
         display: block;
         text-align: center;
     }
-
+    .article.popular{
+        
+    }
 
 
 }
