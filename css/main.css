@@ -481,7 +481,28 @@ body {
 }
 
 .header-navgroup {
-  width: 33.333%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav {
+  display: flex;
+}
+.header-nav__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+.header-nav__link:hover {
+  opacity: 0.5;
+}
+.header-nav__link_basket {
+  background: url(../img/basket.png) no-repeat center center;
+}
+.header-nav__link_login {
+  background: url(../img/login.png) no-repeat center center;
+  margin-left: 10px;
 }
 
 .header {
@@ -491,7 +512,56 @@ body {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr auto 1fr;
+  margin-bottom: 56px;
 }
 .nav {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 40px;
+}
+.nav__link {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: "f500";
+  transition: all 0.2s ease-in-out;
+}
+.nav__link_drop {
+  position: relative;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.nav__link_drop:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../img/down-arrow.png) no-repeat center center/contain;
+  top: 5px;
+  right: 0px;
+}
+.nav__link span {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  font-family: "f500";
+}
+.nav__link:hover {
+  opacity: 0.5;
+}
+.nav__drop {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+.nav__note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "f300";
 }/*# sourceMappingURL=main.css.map */
