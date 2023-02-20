@@ -754,4 +754,43 @@ body {
 .popular__link-desc {
   font-size: 16px;
   line-height: 22px;
+}
+
+.adv__wrap {
+  display: flex;
+  gap: 40px;
+}
+.adv__pic {
+  flex: 0 0 500px;
+  background: url(../img/plus_bg.jpg) no-repeat right top;
+  position: relative;
+}
+.adv__pic-item {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.adv__pic-item.vis {
+  display: block;
+}
+.adv__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  border-left: 4px solid #C4C4C4;
+}
+.adv__desc-item {
+  font-family: "f300";
+  transition: all 0.2s ease-in-out;
+  cursor: default;
+  padding: 10px 0 10px 28px;
+  border-left: 4px solid transparent;
+  transform: translateX(-4px);
+}
+.adv__desc-item:hover {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "f400";
+  border-left: 4px solid #111;
 }/*# sourceMappingURL=main.css.map */

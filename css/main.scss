@@ -390,6 +390,46 @@ body {
         line-height: 22px;
     }
 }
+.adv {
+    &__wrap {
+        display: flex;
+        gap: 40px;
+    }
+    &__pic {
+        flex: 0 0 500px;
+        background: url(../img/plus_bg.jpg) no-repeat right top;
+        position: relative;
+    }
+    &__pic-item {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        &.vis{
+            display: block;
+        }
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        border-left: 4px solid #C4C4C4;
+    }
+    &__desc-item {
+        font-family: "f300";
+        transition: $transition;
+        cursor: default;
+        padding: 10px 0 10px 28px;
+        border-left: 4px solid transparent;
+        transform: translateX(-4px);
+        &:hover{
+            font-size: 22px;
+            line-height: 30px;
+            font-family: "f400";
+            border-left: 4px solid #111;
+        }
+    }
+}
 
 
 
