@@ -95,6 +95,7 @@ label:focus {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400;
+  font-family: "f500";
 }
 
 input,
@@ -142,7 +143,8 @@ ol {
 }
 
 b, strong {
-  font-family: "f700";
+  font-family: "f500";
+  font-weight: 400;
 }
 
 i {
@@ -611,6 +613,15 @@ body {
   padding-bottom: 102px;
   margin-bottom: 92px;
   border-bottom: 1px solid #111111;
+  position: relative;
+}
+.article__title {
+  font-family: "f500";
+  font-size: 46px;
+  line-height: 63px;
+  text-transform: uppercase;
+  width: 510px;
+  margin-bottom: 42px;
 }
 
 .intro .slick-prev, .intro .slick-next {
@@ -640,4 +651,81 @@ body {
 }
 .slick-prev::before, .slick-prev::after, .slick-next::before, .slick-next::after {
   display: none;
+}
+
+.modalita__pay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+}
+.modalita__pay div {
+  font-size: 18px;
+  line-height: 25px;
+}
+.modalita__paysub {
+  font-size: 24px;
+  line-height: 33px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.modalita__items {
+  display: flex;
+  justify-content: space-between;
+}
+.modalita__item {
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "f300";
+}
+
+.offer__grid {
+  display: grid;
+  grid-template: 1fr 1fr/2fr 1fr;
+  gap: 20px;
+}
+.offer__link {
+  display: block;
+  overflow: hidden;
+}
+.offer__link img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+.offer__link:hover img {
+  transform: scale(1.05);
+}
+.offer__grid-1 {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+.offer__grid-2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.offer__grid-3 {
+  grid-row: 2/2;
+  grid-column: 2/3;
+}
+
+.about__list {
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about__item-title {
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #111111;
+  margin-bottom: 12px;
 }/*# sourceMappingURL=main.css.map */
