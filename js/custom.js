@@ -85,7 +85,7 @@ $(document).ready(function () {
     $('.adv__desc-item').hover(function() {
         $('.adv__pic-item').removeClass('vis');
         var activeTab = $(this).attr('data-id');
-        console.log(activeTab);
+        // console.log(activeTab);
         $('#'+activeTab).addClass('vis');
         return false;
     });
@@ -93,7 +93,7 @@ $(document).ready(function () {
         $('.tab__item').removeClass('act');
         $(this).addClass('act');
         var activeTab = $(this).attr('data-id');
-        console.log(activeTab);
+        //console.log(activeTab);
         $('.tab__desc-item').removeClass('vis');
         $('#'+activeTab).addClass('vis');
         return false;
@@ -109,6 +109,15 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     $('.article__title').click(modal);
+    $('.select__head').click(function() {
+        $('.select').toggleClass('open');
+    });
+    $('.select__option').click(function() {
+        $('.select').removeClass('open');
+        var text = $(this).text();
+        console.log(text);
+        $('.select__head').empty().append(text);
+    });
 });
 
 
