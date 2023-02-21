@@ -97,6 +97,10 @@ label:focus {
   outline: none;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400;
@@ -1875,6 +1879,12 @@ body.oh {
   }
   .tab__desc-text .btn {
     margin-top: 20px;
+    padding: 0 15px;
+    align-self: center;
+  }
+  .tab__desc-text {
+    display: flex;
+    flex-direction: column;
   }
   .tab__desc-text p {
     font-size: 16px;
