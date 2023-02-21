@@ -522,7 +522,6 @@ body {
         color: #DE3838;
         font-family: "f600";
     }
-    
 }
 .btn {
     font-size: 16px;
@@ -833,6 +832,15 @@ body {
     }
     &__item {
         white-space: nowrap;
+        color: #111;
+        background: transparent;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        &:hover, &.act{
+            color: #fff;
+            background: #111;
+        }
     }
     &__desc {}
     &__desc-item {
@@ -850,6 +858,9 @@ body {
         p{
             font-size: 16px;
             line-height: 22px;
+        }
+        .btn{
+            margin-top: 42px;
         }
     }
 }
