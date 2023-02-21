@@ -89,7 +89,7 @@ $(document).ready(function () {
         $('#'+activeTab).addClass('vis');
         return false;
     });
-    $('.tab__item').click(function() {
+    $('.tab__item, .select__option').click(function() {
         $('.tab__item').removeClass('act');
         $(this).addClass('act');
         var activeTab = $(this).attr('data-id');
