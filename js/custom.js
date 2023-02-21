@@ -70,6 +70,18 @@ $(document).ready(function () {
             }
         ]
     });
+    $('#slick_5').slick({
+        slidesToShow: 3,
+        dots: false,
+        //autoplay: true,
+        autoplaySpeed: 7000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: "unslick",
+            }
+        ]
+    });
     $('.adv__desc-item').hover(function() {
         $('.adv__pic-item').removeClass('vis');
         var activeTab = $(this).attr('data-id');
