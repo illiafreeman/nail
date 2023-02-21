@@ -472,7 +472,7 @@ body {
   position: absolute;
   width: 21px;
   height: 21px;
-  background: url(../img/search.png) no-repeat center center;
+  background: url(../img/search.svg) no-repeat center center;
   top: 10px;
   right: 10px;
 }
@@ -509,11 +509,11 @@ body {
   opacity: 0.5;
 }
 .header-nav__link_basket {
-  background: url(../img/basket.png) no-repeat center center;
+  background: url(../img/basket.svg) no-repeat center center;
   position: relative;
 }
 .header-nav__link_login {
-  background: url(../img/login.png) no-repeat center center;
+  background: url(../img/login.svg) no-repeat center center;
   margin-left: 10px;
 }
 .header-nav__link-label {
@@ -1013,10 +1013,10 @@ body {
   transform: scale(1.1);
 }
 .footer__soc-fb {
-  background: url(../img/fb.png) no-repeat center top/contain;
+  background: url(../img/fb.svg) no-repeat center top/contain;
 }
 .footer__soc-in {
-  background: url(../img/in.png) no-repeat center top/contain;
+  background: url(../img/in.svg) no-repeat center top/contain;
 }
 .footer__product-title {
   font-family: "f500";
@@ -1362,10 +1362,10 @@ body {
   transform: scale(1.1);
 }
 .reg__soc-te {
-  background: url(../img/te.png) no-repeat center top/contain;
+  background: url(../img/te.svg) no-repeat center top/contain;
 }
 .reg__soc-wa {
-  background: url(../img/wa.png) no-repeat center top/contain;
+  background: url(../img/wa.svg) no-repeat center top/contain;
 }
 
 .modal-bg {
