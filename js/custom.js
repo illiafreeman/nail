@@ -46,8 +46,20 @@ $(document).ready(function () {
             }
         ]
     });
-    $('#slick_3, #slick_5').slick({
+    $('#slick_3').slick({
         slidesToShow: 4,
+        dots: false,
+        //autoplay: true,
+        autoplaySpeed: 7000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: "unslick",
+            }
+        ]
+    });
+    $('#slick_4').slick({
+        slidesToShow: 3,
         dots: false,
         //autoplay: true,
         autoplaySpeed: 7000,

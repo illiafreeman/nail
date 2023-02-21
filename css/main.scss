@@ -867,6 +867,72 @@ body {
         }
     }
 }
+.review {
+    &__slider {
+        padding: 0 40px;
+        .slick-prev, .slick-next{
+            padding: 0;
+            border: 0;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(../img/arr_black.png) no-repeat center center;
+            transition: $transition;
+            z-index: 100;
+        }
+        .slick-prev{
+            left: 0;
+            &:hover{
+                left: -5px;
+            }
+        }
+        .slick-next{
+            right: 0;
+            transform: rotate(180deg) translate(0, 50%);
+            &:hover{
+                right: -5px;
+            }
+        }
+        .slick-track {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+    &__item {
+        margin: 0 13px;
+        flex-direction: column;
+        display: flex !important;
+        height: auto;
+        border: 1px solid #111111;
+        padding: 28px;
+        align-items: flex-start;
+    }
+    &__name {
+        font-size: 20px;
+        line-height: 21px;
+        font-family: "f600";
+        margin-bottom: 22px;
+        background: url(../img/in_red.png) no-repeat right center;
+        height: 38px;
+        padding-right: 45px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    &__in {
+        font-size: 18px;
+        line-height: 25px;
+        font-family: "f500";
+        margin-bottom: 22px;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    &__text {}
+}
 
 
 
