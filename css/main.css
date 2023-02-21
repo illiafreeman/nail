@@ -1197,6 +1197,10 @@ body {
   color: #fff;
   background: #111;
 }
+.tab__desc {
+  position: relative;
+  flex-grow: 2;
+}
 .tab__desc-item {
   display: none;
 }

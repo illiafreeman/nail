@@ -65,7 +65,15 @@ $(document).ready(function () {
         $('#'+activeTab).addClass('vis');
         return false;
     });
-    
+    $('.tab__item').click(function() {
+        $('.tab__item').removeClass('act');
+        $(this).addClass('act');
+        var activeTab = $(this).attr('data-id');
+        console.log(activeTab);
+        $('.tab__desc-item').removeClass('vis');
+        $('#'+activeTab).addClass('vis');
+        return false;
+    });
 
 });
 

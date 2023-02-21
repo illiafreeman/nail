@@ -842,7 +842,10 @@ body {
             background: #111;
         }
     }
-    &__desc {}
+    &__desc {
+        position: relative;
+        flex-grow: 2;
+    }
     &__desc-item {
         display: none;
         &.vis{
