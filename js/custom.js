@@ -108,14 +108,14 @@ $(document).ready(function () {
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    $('.article__title').click(modal);
+    $('.corsi__about img').click(modal);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
     });
     $('.select__option').click(function() {
         $('.select').removeClass('open');
         var text = $(this).text();
-        console.log(text);
+        //console.log(text);
         $('.select__head').empty().append(text);
     });
 });
