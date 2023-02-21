@@ -1364,6 +1364,101 @@ body {
   background: url(../img/wa.png) no-repeat center top/contain;
 }
 
+.modal-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 17px;
+  z-index: 1000;
+}
+.modal-bg.vis {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 640px;
+  background: #fff url(../img/modal_bg.png) center top no-repeat;
+  top: 50%;
+  left: calc(50% - 17px);
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.modal.vis {
+  opacity: 1;
+  visibility: visible;
+}
+.modal_btn {
+  width: calc(50% - 8px);
+  height: 48px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 16px;
+}
+.modal_btn:hover {
+  box-shadow: 0px 3px 9px 0px #e2b6ff;
+}
+.modal_btn-app {
+  background: url(../img/btn_app.png) center center no-repeat;
+}
+.modal_btn-pla {
+  background: url(../img/btn_pla.png) center center no-repeat;
+}
+.modal__body {
+  padding: 56px 72px;
+}
+.modal__logo {
+  display: block;
+  background: url(../img/logo_color.png) center center no-repeat;
+  width: 218px;
+  height: 48px;
+  margin: 0 auto 32px;
+}
+.modal__desc {
+  font-size: 18px;
+  line-height: 26px;
+  width: 300px;
+  margin-bottom: 32px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.modal__desc_min {
+  display: none;
+}
+.modal__action {
+  display: flex;
+  gap: 16px;
+}
+.modal__close {
+  width: 48px;
+  height: 48px;
+  background: #fff url(../img/close.svg) center center no-repeat;
+  border-radius: 16px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+body.oh {
+  padding-right: 17px;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;
@@ -1374,6 +1469,9 @@ body {
   }
 }
 @media only screen and (max-width: 1024px) {
+  body.oh {
+    padding-right: 0;
+  }
   .header-logo {
     width: 46px;
     height: 46px;
