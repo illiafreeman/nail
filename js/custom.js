@@ -46,7 +46,7 @@ $(document).ready(function () {
             }
         ]
     });
-    $('#slick_3').slick({
+    $('#slick_3, #slick_5').slick({
         slidesToShow: 4,
         dots: false,
         //autoplay: true,
