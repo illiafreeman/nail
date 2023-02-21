@@ -1928,8 +1928,8 @@ body.oh {
     height: 38px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .tab__list, .tab__desc {
+@media only screen and (max-width: 767px) {
+  .tab__list {
     display: none;
   }
   .select {
@@ -1939,6 +1939,7 @@ body.oh {
     border: 1px solid #111111;
     z-index: 100;
     width: 320px;
+    min-width: 320px;
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
@@ -1951,7 +1952,7 @@ body.oh {
     align-items: center;
     padding: 0 12px;
     padding-right: 50px;
-    background: url(../img/arr_down.png) no-repeat 290px center;
+    background: url(../img/arr_down.png) no-repeat 95% center;
   }
   .select__list {
     position: absolute;
@@ -1977,9 +1978,27 @@ body.oh {
     opacity: 1;
     visibility: visible;
   }
+  .tab__wrap {
+    flex-direction: column;
+  }
+  .tab__desc-pic {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .tab__desc-item {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 480px) {
   .corsi__about img, .corsi__about h3, .corsi__about div, .corsi__head .article__subtitle {
     max-width: 100%;
+  }
+  .tab__desc-pic {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+    min-width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
