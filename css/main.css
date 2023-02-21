@@ -1387,7 +1387,7 @@ body {
 
 .modal {
   width: 656px;
-  background: #fff url(../img/modal_bg.png) center top no-repeat;
+  background: #fff;
   top: 50%;
   left: calc(50% - 17px);
   transform: translate(-50%, -50%);
@@ -1488,6 +1488,9 @@ body.oh {
   padding-right: 17px;
 }
 
+.select {
+  display: none;
+}
 @media only screen and (max-width: 1280px) {
   .container {
     width: 100%;
@@ -1495,6 +1498,12 @@ body.oh {
   }
   .header {
     padding: 26px 20px;
+  }
+  .corsi__about img, .corsi__about h3, .corsi__about div {
+    max-width: 400px;
+  }
+  .tab__wrap {
+    gap: 40px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -1795,5 +1804,127 @@ body.oh {
   .nav__link_drop.vis .nav__drop .nav__drop-item {
     -moz-column-count: 2;
          column-count: 2;
+  }
+  .corsi {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .corsi__head {
+    border-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .corsi__head .article__title {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .corsi__head .article__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 320px;
+  }
+  .corsi__about h3 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+  .corsi__about div {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .corsi__about {
+    padding-bottom: 52px;
+    border-bottom: 1px solid #111;
+  }
+  .corsi__adv {
+    padding-top: 42px;
+  }
+  .corsi__adv h3 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+  .corsi {
+    padding-bottom: 42px;
+  }
+  .tab__desc-pic {
+    width: 200px;
+  }
+  .tab__list {
+    gap: 8px;
+  }
+  .tab__desc-text .btn {
+    margin-top: 20px;
+  }
+  .tab__desc-text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .review__slider {
+    overflow-x: auto;
+    display: flex;
+    gap: 0;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .review__item {
+    margin: 0 8px;
+    width: 266px;
+    min-width: 266px;
+    padding: 20px 12px;
+  }
+  .review__item:first-child {
+    margin-left: 0;
+  }
+  .review__name {
+    align-self: stretch;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 25px;
+    height: 52px;
+    margin-bottom: 23px;
+  }
+  .review__in {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .review__text {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "f300";
+  }
+  .article.review, .article.portfolio {
+    padding-bottom: 42px;
+  }
+  .portfolio__slider {
+    overflow-x: auto;
+    display: flex;
+    gap: 0;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .portfolio__item {
+    margin: 0 8px;
+    width: 266px;
+    min-width: 266px;
+  }
+  .portfolio__item:first-child {
+    margin-left: 0;
+  }
+  .article.portfolio {
+    margin-bottom: 0;
+  }
+  .article.reg {
+    margin: 0 -20px 42px;
+    padding: 42px 0;
+  }
+  .reg__link {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 42px;
+  }
+  .reg__soc {
+    width: 38px;
+    height: 38px;
   }
 }/*# sourceMappingURL=main.css.map */

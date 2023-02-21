@@ -1032,7 +1032,7 @@ body {
 }
 .modal {
     width: 656px;
-    background: #fff url(../img/modal_bg.png) center top no-repeat;
+    background: #fff;
     top: 50%;
     left: calc(50% - 17px);
     transform: translate(-50%,-50%);
@@ -1126,6 +1126,12 @@ body {
 }
 body.oh {
     padding-right: 17px;
+}
+.select {
+    display: none;
+    &__head {}
+    &__list {}
+    &__option {}
 }
 
 
