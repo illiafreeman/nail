@@ -12,6 +12,26 @@
     .tab__wrap {
         gap: 40px;
     }
+    body.oh {
+        padding-right: 0;
+    }
+    .modal {
+        z-index: 1000;
+        left: 50%;
+        width: 320px;
+    }
+    .modal__desc {
+        font-size: 17px;
+        line-height: 29px;
+        margin-bottom: 24px;
+    }
+    .modal__close {
+        top: 10px;
+        right: 10px;
+    }
+    .modal__body {
+        padding: 40px 40px 126px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     body.oh {
