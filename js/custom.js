@@ -110,7 +110,7 @@ $(document).ready(function () {
     }
     setTimeout(function() { 
         modal();
-    }, 15000);
+    }, 10000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
     });
