@@ -108,7 +108,9 @@ $(document).ready(function () {
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    $('.corsi__about img').click(modal);
+    setTimeout(function() { 
+        modal();
+    }, 15000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
     });
