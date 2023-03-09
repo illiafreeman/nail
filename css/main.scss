@@ -175,8 +175,11 @@ body {
                     visibility: visible;
                     top: 100%;
                 }
-                span{
-                    //opacity: 0.5;
+                
+            }
+            & > a{
+                &:hover{
+                    opacity: 0.5;
                 }
             }
         }
@@ -1133,7 +1136,9 @@ body.oh {
     &__list {}
     &__option {}
 }
-
+.all{
+    display: none;
+}
 
 
 

@@ -11,7 +11,13 @@ $(document).ready(function () {
     $('.nav__link_drop').click(function() {
         $(this).addClass('vis');
     });
-
+    var wi = $(window).width();
+ 
+    if (wi <= 1024){
+        $('.nav__link_drop').click(function(e) {
+            e.preventDefault();
+        });
+    }
     /*end top menu toggle*/
 
 
@@ -109,7 +115,7 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     setTimeout(function() { 
-        modal();
+        //modal();
     }, 10000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
