@@ -25,7 +25,6 @@ $(document).ready(function () {
         slidesToShow: 1,
         dots: false,
         adaptiveHeight: true,
-        //autoplay: true,
         autoplaySpeed: 10000,
         responsive: [
             {
@@ -43,7 +42,6 @@ $(document).ready(function () {
     $('#slick_2').slick({
         slidesToShow: 4,
         dots: false,
-        //autoplay: true,
         autoplaySpeed: 7000,
         responsive: [
             {
@@ -55,7 +53,6 @@ $(document).ready(function () {
     $('#slick_3').slick({
         slidesToShow: 4,
         dots: false,
-        //autoplay: true,
         autoplaySpeed: 7000,
         responsive: [
             {
@@ -67,7 +64,6 @@ $(document).ready(function () {
     $('#slick_4').slick({
         slidesToShow: 3,
         dots: false,
-        //autoplay: true,
         autoplaySpeed: 7000,
         responsive: [
             {
@@ -79,7 +75,6 @@ $(document).ready(function () {
     $('#slick_5').slick({
         slidesToShow: 3,
         dots: false,
-        //autoplay: true,
         autoplaySpeed: 7000,
         responsive: [
             {
@@ -91,7 +86,6 @@ $(document).ready(function () {
     $('.adv__desc-item').hover(function() {
         $('.adv__pic-item').removeClass('vis');
         var activeTab = $(this).attr('data-id');
-        // console.log(activeTab);
         $('#'+activeTab).addClass('vis');
         return false;
     });
@@ -99,7 +93,6 @@ $(document).ready(function () {
         $('.tab__item').removeClass('act');
         $(this).addClass('act');
         var activeTab = $(this).attr('data-id');
-        //console.log(activeTab);
         $('.tab__desc-item').removeClass('vis');
         $('#'+activeTab).addClass('vis');
         return false;
@@ -115,7 +108,7 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     setTimeout(function() { 
-        //modal();
+        modal();
     }, 10000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
@@ -123,7 +116,6 @@ $(document).ready(function () {
     $('.select__option').click(function() {
         $('.select').removeClass('open');
         var text = $(this).text();
-        //console.log(text);
         $('.select__head').empty().append(text);
     });
 });
