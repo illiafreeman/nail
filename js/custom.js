@@ -7,6 +7,7 @@ $(document).ready(function () {
         $('body').toggleClass('oh');
         $('#hamburger').toggleClass('open');
         $('.nav__link_drop').removeClass('vis');
+        $('.header').toggleClass('fixed');
     });
     $('.nav__link_drop').click(function() {
         $(this).addClass('vis');
@@ -108,7 +109,7 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     setTimeout(function() { 
-        modal();
+        //modal();
     }, 10000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');

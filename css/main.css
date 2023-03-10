@@ -541,6 +541,15 @@ body {
   grid-template-columns: 1fr auto 1fr;
   margin-bottom: 56px;
 }
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  background: #fff;
+}
+
 .nav {
   width: 100%;
   display: flex;
