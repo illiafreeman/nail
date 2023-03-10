@@ -109,7 +109,7 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     setTimeout(function() { 
-        //modal();
+        modal();
     }, 10000);
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
