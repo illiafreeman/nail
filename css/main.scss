@@ -93,7 +93,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     height: 150px;
-    background: url(../img/logo.svg) no-repeat center top;
+    background: url(../img/logo.png) no-repeat center top/109px 109px;
     &__desc {
         font-family: 'f300';
         font-size: 16px;
@@ -398,6 +398,7 @@ body {
     &__link-desc {
         font-size: 16px;
         line-height: 22px;
+        display: block;
     }
 }
 .adv {
@@ -633,7 +634,7 @@ body {
         display: block;
         width: 86px;
         height: 86px;
-        background: url(../img/logo.svg) no-repeat center top / contain;
+        background: url(../img/logo.png) no-repeat center top / contain;
         margin-bottom: 24px;
     }
     &__mail {

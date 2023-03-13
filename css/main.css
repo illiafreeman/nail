@@ -483,7 +483,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   height: 150px;
-  background: url(../img/logo.svg) no-repeat center top;
+  background: url(../img/logo.png) no-repeat center top/109px 109px;
 }
 .header-logo__desc {
   font-family: "f300";
@@ -775,6 +775,7 @@ body {
 .popular__link-desc {
   font-size: 16px;
   line-height: 22px;
+  display: block;
 }
 
 .adv__wrap {
@@ -994,7 +995,7 @@ body {
   display: block;
   width: 86px;
   height: 86px;
-  background: url(../img/logo.svg) no-repeat center top/contain;
+  background: url(../img/logo.png) no-repeat center top/contain;
   margin-bottom: 24px;
 }
 .footer__mail {
@@ -1550,7 +1551,7 @@ body.oh {
     width: 46px;
     height: 46px;
     order: 2;
-    background: url(../img/logo.svg) no-repeat center top/contain;
+    background: url(../img/logo.png) no-repeat center top/contain;
   }
   .header-logo__desc {
     display: none;
