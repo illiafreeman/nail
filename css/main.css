@@ -1508,6 +1508,10 @@ body.oh {
   display: none;
 }
 
+.wow {
+  visibility: hidden;
+}
+
 /*!
 * animate.css - https://animate.style/
 * Version - 4.1.1
