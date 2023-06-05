@@ -109,8 +109,14 @@ $(document).ready(function () {
         $('.modal').addClass('vis');
     }
     setTimeout(function() { 
-        modal();
+        //modal();
     }, 10000);
+    $('.header-nav__link_login').click(function() {
+        $('body').addClass('oh');
+        $('.modal-bg').addClass('vis');
+        $('.modal_reg').addClass('vis');
+
+    });
     $('.select__head').click(function() {
         $('.select').toggleClass('open');
     });

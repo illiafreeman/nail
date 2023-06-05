@@ -1412,6 +1412,36 @@ body {
   overflow-y: auto;
   z-index: 1000;
 }
+.modal_reg {
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transform: translate(-50%, 100px);
+}
+.modal_reg__subdesc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+}
+.modal_reg .sq {
+  display: none;
+}
+.modal_reg .modal__body:after {
+  display: none;
+}
+.modal_reg .order {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "f400";
+  display: inline-block;
+}
+.modal__subdesc {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "f400";
+  text-align: center;
+  margin-bottom: 36px;
+}
 .modal.vis {
   opacity: 1;
   visibility: visible;
@@ -1485,6 +1515,50 @@ body {
   text-transform: uppercase;
   color: #D2D2D2;
   opacity: 1;
+}
+.modal__action span {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "f400";
+  margin-bottom: -15px;
+}
+.modal__action .error {
+  color: #DE3838;
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "f400";
+  margin-top: -15px;
+}
+.modal .devider {
+  display: block;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  color: #989898;
+  margin-bottom: 40px;
+}
+.modal .devider:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  border-top: 1px solid #989898;
+  top: 15px;
+  left: 0px;
+}
+.modal .devider:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  border-top: 1px solid #989898;
+  top: 15px;
+  right: 0px;
 }
 .modal__close {
   width: 30px;
@@ -2546,7 +2620,6 @@ body.oh {
   }
 }
 .animate__animated.animate__flip {
-  -webkit-backface-visibility: visible;
   backface-visibility: visible;
   animation-name: flip;
 }
@@ -2572,7 +2645,6 @@ body.oh {
   }
 }
 .animate__flipInX {
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInX;
 }
@@ -2598,7 +2670,6 @@ body.oh {
   }
 }
 .animate__flipInY {
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipInY;
 }
@@ -2619,7 +2690,6 @@ body.oh {
   animation-duration: 0.75s;
   animation-duration: calc(var(--animate-duration) * 0.75);
   animation-name: flipOutX;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flipOutY {
@@ -2638,7 +2708,6 @@ body.oh {
 .animate__flipOutY {
   animation-duration: 0.75s;
   animation-duration: calc(var(--animate-duration) * 0.75);
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
   animation-name: flipOutY;
 }

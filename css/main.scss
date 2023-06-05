@@ -1054,6 +1054,38 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     z-index: 1000;
+    &_reg{
+        top: 0;
+        bottom: 0;
+        overflow-y: auto;
+        transform: translate(-50%, 100px);
+        &__subdesc{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 30px;
+        }
+        .sq{
+            display: none;
+        }
+        .modal__body {
+            &:after{
+                display: none;  
+            }
+        }
+        .order{
+            font-size: 18px;
+            line-height: 30px;
+            font-family: 'f400';
+            display: inline-block;
+        }
+    }
+    &__subdesc{
+        font-size: 22px;
+        line-height: 30px;
+        font-family: 'f400';
+        text-align: center;
+        margin-bottom: 36px;
+    }
     &.vis{
         opacity: 1;
         visibility: visible;
@@ -1122,6 +1154,50 @@ body {
                 color: #D2D2D2;
                 opacity: 1;
             }
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: 'f400';
+            margin-bottom: -15px;
+        }
+        .error{
+            color: #DE3838;
+            display: block;
+            font-size: 16px;
+            line-height: 22px;
+            font-family: 'f400';
+            margin-top: -15px;
+        }
+    }
+    .devider{
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        color: #989898;
+        margin-bottom: 40px;
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            border-top: 1px solid #989898;
+            top: 15px;
+            left: 0px;
+        }
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            border-top: 1px solid #989898;
+            top: 15px;
+            right: 0px;
         }
     }
     &__close {
