@@ -32,6 +32,14 @@
     .modal__body {
         padding: 40px 40px 126px;
     }
+    .modal__subdesc {
+        font-size: 16px;
+    }
+    .modal_reg{
+        .modal__body{
+            padding: 40px 40px 60px;
+        }
+    }
 }
 @media only screen and (max-width: 1024px) {
     body.oh {

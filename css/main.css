@@ -1413,10 +1413,10 @@ body {
   z-index: 1000;
 }
 .modal_reg {
-  top: 0;
-  bottom: 0;
+  top: 50px;
+  bottom: 50px;
   overflow-y: auto;
-  transform: translate(-50%, 100px);
+  transform: translate(-50%, 0);
 }
 .modal_reg__subdesc {
   font-weight: 400;
@@ -3258,6 +3258,12 @@ body.oh {
   }
   .modal__body {
     padding: 40px 40px 126px;
+  }
+  .modal__subdesc {
+    font-size: 16px;
+  }
+  .modal_reg .modal__body {
+    padding: 40px 40px 60px;
   }
 }
 @media only screen and (max-width: 1024px) {

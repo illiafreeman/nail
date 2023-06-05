@@ -106,10 +106,10 @@ $(document).ready(function () {
     function modal(){
         $('body').addClass('oh');
         $('.modal-bg').addClass('vis');
-        $('.modal').addClass('vis');
+        $('#modal').addClass('vis');
     }
     setTimeout(function() { 
-        //modal();
+        modal();
     }, 10000);
     $('.header-nav__link_login').click(function() {
         $('body').addClass('oh');

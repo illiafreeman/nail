@@ -1055,10 +1055,10 @@ body {
     overflow-y: auto;
     z-index: 1000;
     &_reg{
-        top: 0;
-        bottom: 0;
+        top: 50px;
+        bottom: 50px;
         overflow-y: auto;
-        transform: translate(-50%, 100px);
+        transform: translate(-50%, 0);
         &__subdesc{
             font-weight: 400;
             font-size: 22px;
