@@ -1401,22 +1401,27 @@ body {
 .modal {
   width: 656px;
   background: #fff;
-  top: 50%;
-  left: calc(50% - 17px);
-  transform: translate(-50%, -50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  transform: translate(-50%, 0);
+  left: calc(50% - 17px);
+  position: absolute;
+  top: 50px;
+}
+.modal-wrap {
   position: fixed;
   opacity: 0;
   visibility: hidden;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 1000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-.modal_reg {
-  top: 50px;
-  bottom: 50px;
-  overflow-y: auto;
-  transform: translate(-50%, 0);
+.modal-wrap.vis {
+  opacity: 1;
+  visibility: visible;
 }
 .modal_reg__subdesc {
   font-weight: 400;
@@ -1441,10 +1446,6 @@ body {
   font-family: "f400";
   text-align: center;
   margin-bottom: 36px;
-}
-.modal.vis {
-  opacity: 1;
-  visibility: visible;
 }
 .modal__body {
   padding: 40px 40px 60px;

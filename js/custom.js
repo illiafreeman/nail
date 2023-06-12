@@ -101,20 +101,20 @@ $(document).ready(function () {
     $('.modal__close').click(function() {
         $('body').removeClass('oh');
         $('.modal-bg').removeClass('vis');
-        $('.modal').removeClass('vis');
+        $('.modal-wrap').removeClass('vis');
     });
     function modal(){
         $('body').addClass('oh');
         $('.modal-bg').addClass('vis');
-        $('#modal').addClass('vis');
+        $('#modal-info').addClass('vis');
     }
     setTimeout(function() { 
         modal();
-    }, 10000);
+    }, 100);
     $('.header-nav__link_login').click(function() {
         $('body').addClass('oh');
         $('.modal-bg').addClass('vis');
-        $('.modal_reg').addClass('vis');
+        $('#modal-reg').addClass('vis');
 
     });
     $('.select__head').click(function() {
