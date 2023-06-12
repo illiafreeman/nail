@@ -1435,7 +1435,7 @@ body {
   display: none;
 }
 .modal_reg .order {
-  font-size: 14px;
+  font-size: 11px;
   line-height: 20px;
   font-family: "f400";
   display: inline-block;
@@ -3454,7 +3454,6 @@ body.oh {
   .btn {
     font-size: 12px;
     line-height: 16px;
-    height: 42px;
     padding: 0 5px;
   }
   .brand__slider {
