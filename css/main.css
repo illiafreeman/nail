@@ -1525,7 +1525,7 @@ body {
   font-size: 12px;
   line-height: 22px;
   font-family: "f400";
-  margin-bottom: -15px;
+  margin-bottom: -8px;
 }
 .modal__action .error {
   color: #DE3838;
@@ -1533,6 +1533,8 @@ body {
   font-size: 12px;
   line-height: 22px;
   font-family: "f400";
+}
+.modal__action div.error {
   margin-top: -15px;
 }
 .modal .devider {
@@ -3266,7 +3268,7 @@ body.oh {
     font-size: 16px;
   }
   .modal_reg .modal__body {
-    padding: 40px 40px 60px;
+    padding: 40px 40px 30px;
   }
 }
 @media only screen and (max-width: 1024px) {

@@ -1172,7 +1172,7 @@ body {
             font-size: 12px;
             line-height: 22px;
             font-family: 'f400';
-            margin-bottom: -15px;
+            margin-bottom: -8px;
         }
         .error{
             color: #DE3838;
@@ -1180,7 +1180,10 @@ body {
             font-size: 12px;
             line-height: 22px;
             font-family: 'f400';
-            margin-top: -15px;
+            //margin-top: -15px;
+        }
+        div.error{
+            margin-top: -15px
         }
     }
     .devider{
