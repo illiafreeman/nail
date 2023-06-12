@@ -535,9 +535,9 @@ body {
     }
 }
 .btn {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
-    height: 46px;
+    height: 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1083,18 +1083,18 @@ body {
             }
         }
         .order{
-            font-size: 18px;
-            line-height: 30px;
+            font-size: 14px;
+            line-height: 20px;
             font-family: 'f400';
             display: inline-block;
         }
     }
     &__subdesc{
-        font-size: 22px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 24px;
         font-family: 'f400';
         text-align: center;
-        margin-bottom: 36px;
+        margin-bottom: 20px;
     }
     &.vis{
         
@@ -1138,8 +1138,8 @@ body {
     }
 
     &__desc {
-        font-size: 31px;
-        line-height: 43px;
+        font-size: 24px;
+        line-height: 24px;
         margin-bottom: 42px;  
         text-transform: uppercase;
         text-align: center;
@@ -1151,22 +1151,25 @@ body {
         display: flex;
         width: 220px;
         flex-direction: column;
-        gap: 20px;
+        gap: 12px;
         input{
-            height: 46px;
+            height: 30px;
             border: 1px solid #111111;
             padding: 0 12px;
-            font-size: 16px;
+            font-size: 13px;
             line-height: 22px;
             &::placeholder{
                 text-transform: uppercase;
                 color: #D2D2D2;
                 opacity: 1;
             }
+            &.error{
+                border-color: #DE3838;
+            }
         }
         span{
             display: block;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 22px;
             font-family: 'f400';
             margin-bottom: -15px;
@@ -1174,7 +1177,7 @@ body {
         .error{
             color: #DE3838;
             display: block;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 22px;
             font-family: 'f400';
             margin-top: -15px;
@@ -1187,7 +1190,6 @@ body {
         font-size: 18px;
         line-height: 25px;
         color: #989898;
-        margin-bottom: 40px;
         &:after{
             content: '';
             display: block;

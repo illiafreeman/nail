@@ -904,9 +904,9 @@ body {
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
-  height: 46px;
+  height: 30px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1435,17 +1435,17 @@ body {
   display: none;
 }
 .modal_reg .order {
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 20px;
   font-family: "f400";
   display: inline-block;
 }
 .modal__subdesc {
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: "f400";
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 .modal__body {
   padding: 40px 40px 60px;
@@ -1485,8 +1485,8 @@ body {
   left: -5px;
 }
 .modal__desc {
-  font-size: 31px;
-  line-height: 43px;
+  font-size: 24px;
+  line-height: 24px;
   margin-bottom: 42px;
   text-transform: uppercase;
   text-align: center;
@@ -1498,13 +1498,13 @@ body {
   display: flex;
   width: 220px;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 .modal__action input {
-  height: 46px;
+  height: 30px;
   border: 1px solid #111111;
   padding: 0 12px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 22px;
 }
 .modal__action input::-moz-placeholder {
@@ -1517,9 +1517,12 @@ body {
   color: #D2D2D2;
   opacity: 1;
 }
+.modal__action input.error {
+  border-color: #DE3838;
+}
 .modal__action span {
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 22px;
   font-family: "f400";
   margin-bottom: -15px;
@@ -1527,7 +1530,7 @@ body {
 .modal__action .error {
   color: #DE3838;
   display: block;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 22px;
   font-family: "f400";
   margin-top: -15px;
@@ -1539,7 +1542,6 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #989898;
-  margin-bottom: 40px;
 }
 .modal .devider:after {
   content: "";
