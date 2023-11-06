@@ -109,7 +109,7 @@ $(document).ready(function () {
         $('#modal-info').addClass('vis');
     }
     setTimeout(function() { 
-        modal();
+        //modal();
     }, 100);
     $('.header-nav__link_login').click(function() {
         $('body').addClass('oh');
